@@ -2,6 +2,7 @@
 # family: papers -> "The papers family"; other -> "More apps".
 # accent / accent-dark: the app's own colour, as on its website, for light and dark mode.
 # downloads: the first is the main button; the rest are listed under it.
+# Optional: shot-kind: icon (an app with no screenshot yet shows its icon, large); status (a note under the links).
 
 - name: Papers Desktop
   family: papers
@@ -99,20 +100,3 @@
       url: https://github.com/mathesislab/Mtrx/releases/latest/download/Mtrx-linux-amd64.deb
     - label: AppImage
       url: https://github.com/mathesislab/Mtrx/releases/latest/download/Mtrx-linux-x86_64.AppImage
-
-- name: Baseline
-  family: other
-  slug: baseline
-  accent: "#0d6a85"
-  accent-dark: "#ffab40"
-  icon: images/baseline/icon.png
-  shot: images/baseline/icon.png
-  shot-kind: icon
-  shot-alt: "The Baseline app icon: a white pace line weaving around an orange baseline"
-  tagline: Every run against your own baseline
-  blurb: >-
-    A private run, walk, hike and ride tracker for iPhone. It records the GPS route, splits and climb, and compares
-    every activity with the last one and with a recency-weighted baseline of the earlier ones on the same route,
-    live and afterwards. No account, no server: everything stays on the phone.
-  platforms: [iPhone]
-  status: Not yet released.

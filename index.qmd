@@ -12,11 +12,11 @@ listing:
       family: papers
     sort: false
     page-size: 100
-  - id: more-apps
+  - id: together-apps
     contents: apps.yml
     template: app-card.ejs
     include:
-      family: other
+      family: together
     sort: false
     page-size: 100
 ---
@@ -32,9 +32,12 @@ someone else's.</p>
 ::: {#papers-apps}
 :::
 
-## More apps {#more}
+## Working together {#together}
 
-::: {#more-apps}
+<p class="section-lead">Science is done in groups, and groups need to talk: about drafts, figures and model runs,
+with the equations in the message.</p>
+
+::: {#together-apps}
 :::
 
 ## Under the hood {#under-the-hood}

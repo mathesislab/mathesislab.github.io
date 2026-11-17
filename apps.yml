@@ -1,5 +1,5 @@
 # The apps shown on the front page, in this order.
-# family: papers -> "The papers family"; other -> "More apps".
+# family: papers -> "The papers family"; together -> "Working together".
 # accent / accent-dark: the app's own colour, as on its website, for light and dark mode.
 # downloads: the first is the main button; the rest are listed under it.
 # Optional: shot-kind: icon (an app with no screenshot yet shows its icon, large); status (a note under the links).
@@ -73,7 +73,7 @@
       url: https://github.com/mathesislab/papers-review/releases/latest/download/Papers-Review-macos-aarch64.dmg
 
 - name: Mtrx
-  family: other
+  family: together
   slug: mtrx
   accent: "#5865f2"
   accent-dark: "#6c78ff"

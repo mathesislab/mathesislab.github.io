@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+<rect id="background" width="1024" height="1024" rx="230" fill="#2F3E9E"/>
+<path id="bubble" d="M 284 150 H 740 A 160 160 0 0 1 900 310 V 590 A 160 160 0 0 1 740 750 H 460 L 214 892 L 284 750 A 160 160 0 0 1 124 590 V 310 A 160 160 0 0 1 284 150 Z" fill="#fff"/>
+<polyline id="mark" points="668,285 357,285 544,450 357,615 668,615" fill="none" stroke="#2F3E9E" stroke-width="72" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

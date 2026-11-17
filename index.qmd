@@ -1,0 +1,66 @@
+---
+pagetitle: Mathesis Lab
+title: Apps for doing science
+subtitle: >-
+  Native apps for the daily work of research: following the literature, writing and reviewing papers, talking with
+  your group. Your work stays in plain files on your own machine: no account, no server.
+listing:
+  - id: papers-apps
+    contents: apps.yml
+    template: app-card.ejs
+    include:
+      family: papers
+    sort: false
+    page-size: 100
+  - id: more-apps
+    contents: apps.yml
+    template: app-card.ejs
+    include:
+      family: other
+    sort: false
+    page-size: 100
+---
+
+::: {.wrap}
+
+## The papers family {#papers}
+
+<p class="section-lead">Three apps over the same plain files: your BibTeX library and its PDFs, and the folder of
+each paper. Each works on its own; together they follow a paper from the first sight of it to the review of
+someone else's.</p>
+
+::: {#papers-apps}
+:::
+
+## More apps {#more}
+
+::: {#more-apps}
+:::
+
+## Under the hood {#under-the-hood}
+
+<p class="section-lead">The libraries the apps are built on, open source as well.</p>
+
+::: {.blocks}
+
+::: {.block}
+### [papers](https://github.com/perrette/papers)
+The command line that started it: a bibliography of PDFs and BibTeX, managed from the terminal. The apps keep
+its files and follow its behaviour.
+:::
+
+::: {.block}
+### [papers-rs](https://github.com/mathesislab/papers-rs)
+A Rust port of papers, with its command line, and a port of pylatexenc. The three papers apps read and write
+your library with it.
+:::
+
+::: {.block}
+### [tauri-plugin-pdfkit](https://github.com/mathesislab/tauri-plugin-pdfkit)
+A PDF in a native PDFKit view, as Preview shows it, over part of a Tauri window on macOS. It shows the PDFs in
+the three papers apps.
+:::
+
+:::
+
+:::

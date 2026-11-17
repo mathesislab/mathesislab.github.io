@@ -1,0 +1,38 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - images/**
+
+website:
+  title: "Mathesis Lab"
+  description: "Native apps for research: follow the literature, write and review papers, talk with your group."
+  site-url: https://mathesislab.github.io
+  favicon: favicon.svg
+  search: false
+  navbar:
+    logo: favicon.svg
+    right:
+      - text: Apps
+        href: index.qmd#papers
+      - text: Under the hood
+        href: index.qmd#under-the-hood
+      - icon: github
+        href: https://github.com/mathesislab
+        aria-label: Mathesis Lab on GitHub
+  page-footer:
+    left: "Mathesis Lab"
+    right:
+      - icon: github
+        href: https://github.com/mathesislab
+        aria-label: Mathesis Lab on GitHub
+
+format:
+  html:
+    theme:
+      light: [cosmo, styles.scss]
+      dark: [cosmo, styles.scss, dark.scss]
+    respect-user-color-scheme: true
+    toc: false
+    anchor-sections: false
+    page-layout: full

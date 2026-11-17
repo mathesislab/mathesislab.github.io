@@ -1,0 +1,33 @@
+/*-- scss:defaults --*/
+
+$body-bg: #1b1c1f;
+$body-color: #ececee;
+$primary: #4aa3c2;
+$link-color: #4aa3c2;
+$navbar-bg: #1b1c1f;
+$navbar-fg: #ececee;
+$footer-bg: #1b1c1f;
+$footer-fg: #a0a0a8;
+
+$muted: #a0a0a8;
+$soft: #24262a;
+$line: #34363b;
+
+/*-- scss:rules --*/
+
+.app-card {
+  --app: var(--app-d);
+}
+
+.app-button.primary,
+.app-button.primary:hover {
+  color: #111316;
+}
+
+.shot-light {
+  display: none !important;
+}
+
+.shot-dark {
+  display: block !important;
+}

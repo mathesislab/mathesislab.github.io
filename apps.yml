@@ -1,0 +1,118 @@
+# The apps shown on the front page, in this order.
+# family: papers -> "The papers family"; other -> "More apps".
+# accent / accent-dark: the app's own colour, as on its website, for light and dark mode.
+# downloads: the first is the main button; the rest are listed under it.
+
+- name: Papers Desktop
+  family: papers
+  slug: papers-desktop
+  accent: "#145a73"
+  accent-dark: "#4aa3c2"
+  icon: images/papers-desktop/logo.svg
+  shot: images/papers-desktop/shot.png
+  shot-alt: "The Feeds tab of Papers Desktop: the new papers of the last 90 days, the best score first, each with its source, title and authors"
+  tagline: Your papers, from first sight to citation
+  blurb: >-
+    Follows the journals, preprints and blogs of your field and ranks the new papers by what you already read.
+    Searches all of science, keeps the papers you choose in your .bib files with their PDFs,
+    opens them in tabs, and cites any of them in a keystroke from any app.
+  platforms: [macOS, Linux]
+  site: https://mathesislab.github.io/papers-desktop/
+  repo: https://github.com/mathesislab/papers-desktop
+  downloads:
+    - label: Download for Mac
+      url: https://github.com/mathesislab/papers-desktop/releases/latest/download/Papers-Desktop-macos-aarch64.dmg
+    - label: Linux .deb
+      url: https://github.com/mathesislab/papers-desktop/releases/latest/download/Papers-Desktop-linux-amd64.deb
+    - label: AppImage
+      url: https://github.com/mathesislab/papers-desktop/releases/latest/download/Papers-Desktop-linux-amd64.AppImage
+
+- name: Papers Write
+  family: papers
+  slug: papers-write
+  accent: "#3b6e3f"
+  accent-dark: "#8fc48f"
+  icon: images/papers-write/logo.svg
+  shot: images/papers-write/shot.png
+  shot-alt: "Papers Write: a Quarto paper in the editor, with the suggestions and comments of two co-authors in the review pane beside it"
+  tagline: Write papers in plain text
+  blurb: >-
+    Edits Markdown and LaTeX, cites from your library, and builds the journal's PDF with texmark or Quarto.
+    Co-authors suggest and comment as in a word processor, and their suggestions and comments are files beside
+    the text, in the folder you already have under git.
+  platforms: [macOS, Linux]
+  site: https://mathesislab.github.io/papers-write/
+  repo: https://github.com/mathesislab/papers-write
+  downloads:
+    - label: Download for Mac
+      url: https://github.com/mathesislab/papers-write/releases/latest/download/Papers-Write-macos-aarch64.dmg
+    - label: Linux .deb
+      url: https://github.com/mathesislab/papers-write/releases/latest/download/Papers-Write-linux-amd64.deb
+    - label: AppImage
+      url: https://github.com/mathesislab/papers-write/releases/latest/download/Papers-Write-linux-amd64.AppImage
+
+- name: Papers Review
+  family: papers
+  slug: papers-review
+  accent: "#a23b2e"
+  accent-dark: "#e0806f"
+  icon: images/papers-review/logo.svg
+  shot: images/papers-review/shot.png
+  shot-alt: "Papers Review: a manuscript PDF with its line numbers, and the Markdown review floating over it"
+  tagline: Review a manuscript beside its PDF
+  blurb: >-
+    Shows the PDF as Preview shows it, with your Markdown review floating over it. One key quotes the selected
+    passage with its page and line numbers; several reviews sit side by side, each with its due date. The review
+    is plain files in the project folder: no account, no database, nothing sent.
+  platforms: [macOS]
+  site: https://mathesislab.github.io/papers-review/
+  repo: https://github.com/mathesislab/papers-review
+  downloads:
+    - label: Download for Mac
+      url: https://github.com/mathesislab/papers-review/releases/latest/download/Papers-Review-macos-aarch64.dmg
+
+- name: Mtrx
+  family: other
+  slug: mtrx
+  accent: "#5865f2"
+  accent-dark: "#6c78ff"
+  icon: images/mtrx/logo.svg
+  shot: images/mtrx/shot.png
+  shot-dark: images/mtrx/shot-dark.png
+  shot-alt: "Mtrx: a research group's room, with typeset math in a message, a call link and a message scheduled for the next morning"
+  tagline: Matrix chat, native and quick
+  blurb: >-
+    A desktop client for Matrix, written in Rust: a real app, not a web page in a
+    wrapper. It has what research groups need: messages sent later or set to disappear, LaTeX math, notes to self,
+    PDFs and call links.
+  platforms: [macOS, Windows, Linux]
+  site: https://mathesislab.github.io/Mtrx/
+  repo: https://github.com/mathesislab/Mtrx
+  downloads:
+    - label: Download for Mac
+      url: https://github.com/mathesislab/Mtrx/releases/latest/download/Mtrx-macos-arm64.zip
+    - label: Windows installer
+      url: https://github.com/mathesislab/Mtrx/releases/latest/download/Mtrx-windows-x64-setup.exe
+    - label: Windows zip
+      url: https://github.com/mathesislab/Mtrx/releases/latest/download/Mtrx-windows-x64.zip
+    - label: Linux .deb
+      url: https://github.com/mathesislab/Mtrx/releases/latest/download/Mtrx-linux-amd64.deb
+    - label: AppImage
+      url: https://github.com/mathesislab/Mtrx/releases/latest/download/Mtrx-linux-x86_64.AppImage
+
+- name: Baseline
+  family: other
+  slug: baseline
+  accent: "#0d6a85"
+  accent-dark: "#ffab40"
+  icon: images/baseline/icon.png
+  shot: images/baseline/icon.png
+  shot-kind: icon
+  shot-alt: "The Baseline app icon: a white pace line weaving around an orange baseline"
+  tagline: Every run against your own baseline
+  blurb: >-
+    A private run, walk, hike and ride tracker for iPhone. It records the GPS route, splits and climb, and compares
+    every activity with the last one and with a recency-weighted baseline of the earlier ones on the same route,
+    live and afterwards. No account, no server: everything stays on the phone.
+  platforms: [iPhone]
+  status: Not yet released.

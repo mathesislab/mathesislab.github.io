@@ -1,0 +1,33 @@
+```{=html}
+<% for (const item of items) { %>
+<article class="app-card<%= item['shot-kind'] === 'icon' ? ' app-card-icon' : '' %>" id="<%= item.slug %>"
+  style="--app-l: <%= item.accent %>; --app-d: <%= item['accent-dark'] %>;">
+  <div class="app-text">
+    <header class="app-head">
+      <img class="app-icon" src="<%= item.icon %>" alt="" width="56" height="56">
+      <div>
+        <h3 class="app-name anchored"><%= item.name %></h3>
+        <p class="app-platforms"><% for (const p of item.platforms) { %><span><%= p %></span><% } %></p>
+      </div>
+    </header>
+    <p class="app-tagline"><%= item.tagline %></p>
+    <p class="app-blurb"><%- item.blurb %></p>
+    <p class="app-actions">
+      <% if (item.downloads) { %><a class="app-button primary" href="<%= item.downloads[0].url %>"><%= item.downloads[0].label %></a><% } %>
+      <% if (item.site) { %><a class="app-button" href="<%= item.site %>">Website</a><% } %>
+      <% if (item.repo) { %><a class="app-button" href="<%= item.repo %>"><i class="bi bi-github"></i> Source</a><% } %>
+    </p>
+    <% if (item.downloads && item.downloads.length > 1) { %>
+    <p class="app-more">Also: <% item.downloads.slice(1).forEach((d, i) => { %><%= i > 0 ? ' · ' : '' %><a href="<%= d.url %>"><%= d.label %></a><% }) %><% if (item.repo) { %> · <a href="<%= item.repo %>/releases">all releases</a><% } %></p>
+    <% } else if (item.repo) { %>
+    <p class="app-more"><a href="<%= item.repo %>/releases">All releases</a></p>
+    <% } %>
+    <% if (item.status) { %><p class="app-status"><%= item.status %></p><% } %>
+  </div>
+  <a class="app-shot"<% if (item.site) { %> href="<%= item.site %>"<% } %>>
+    <img class="<%= item['shot-dark'] ? 'shot-light' : '' %>" src="<%= item.shot %>" alt="<%= item['shot-alt'] %>" loading="lazy">
+    <% if (item['shot-dark']) { %><img class="shot-dark" src="<%= item['shot-dark'] %>" alt="<%= item['shot-alt'] %>" loading="lazy"><% } %>
+  </a>
+</article>
+<% } %>
+```
